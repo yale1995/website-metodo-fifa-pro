@@ -1,17 +1,28 @@
 'use client'
 
 import { Logo } from '@/components/Logo'
-import { QuizzInvitation } from '../../components/QuizzInvitation'
 import { useState } from 'react'
+import { QuestionOne } from '@/components/QuestionOne'
+import { QuizzInvitation } from '@/components/QuizzInvitation'
 
 export default function PreSellPage() {
-  const [step] = useState(1)
+  const [step, setStep] = useState(1)
 
   function renderComponent() {
     switch (step) {
       case 1:
-        return <QuizzInvitation />
+        return <QuizzInvitation onAdvance={handleAdvanceSteps} />
+
+      case 2:
+        return <QuestionOne onAdvance={handleAdvanceSteps} />
+
+      default:
+        return null
     }
+  }
+
+  function handleAdvanceSteps() {
+    setStep((state) => state + 1)
   }
 
   return (
