@@ -4,7 +4,7 @@ import { CarouselContainer } from '@/components/Carousel/CarouselContainer'
 
 import { PaperPlaneRight } from 'phosphor-react'
 
-export function QuizzInvitation() {
+export function QuizzInvitation({ onAdvance }: any) {
   const carouselImages = [
     '/carousel-images/1.jpeg',
     '/carousel-images/2.jpeg',
@@ -47,7 +47,10 @@ export function QuizzInvitation() {
         CLIQUE NO LINK ABAIXO SE DESEJA RESPONDER E MUDAR DE VIDA
       </span> */}
 
-      <button className="flex w-full justify-center items-center bg-green-600 rounded-lg p-4 text-gray-300 gap-2 text-xl font-bold mx-auto mt-4 hover:bg-green-500 hover:text-gray-50 md:w-96">
+      <button
+        onClick={onAdvance}
+        className="flex w-full justify-center items-center bg-green-600 rounded-lg p-4 text-gray-300 gap-2 text-xl font-bold mx-auto mt-4 hover:bg-green-500 hover:text-gray-50 md:w-96"
+      >
         <PaperPlaneRight size={24} weight="bold" className="-rotate-45" />
         QUERO MUDAR DE VIDA
       </button>
