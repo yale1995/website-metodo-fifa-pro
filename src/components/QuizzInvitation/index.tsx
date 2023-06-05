@@ -27,8 +27,8 @@ export function QuizzInvitation() {
       </h1>
 
       <CarouselContainer>
-        {carouselImages.map((path) => (
-          <CarouselCard key={path} pathImage={path} />
+        {carouselImages.map((path, index) => (
+          <CarouselCard key={index} pathImage={path} />
         ))}
       </CarouselContainer>
 
