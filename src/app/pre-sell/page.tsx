@@ -1,7 +1,7 @@
 'use client'
 
 import { Logo } from '@/components/Logo'
-import { QuizzInvitation } from '../../components/QuizzInvitation/QuizzInvitation'
+import { QuizzInvitation } from '../../components/QuizzInvitation'
 import { useState } from 'react'
 
 export default function PreSellPage() {
