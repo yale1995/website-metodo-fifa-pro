@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background: #1e1b4b;
-}
-
 @layer utilities {
   @variants responsive {
 
