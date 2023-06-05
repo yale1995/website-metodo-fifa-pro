@@ -27,9 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
