@@ -25,7 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           content="Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!"
         />
       </head>
-      <body className="bg-[url('../assets/background-image.jpg')] min-h-screen bg-cover backdrop-blur-sm">
+      <body className="bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
         {children}
       </body>
     </html>
