@@ -1,10 +1,8 @@
-import { LoadingBar } from '../LoadingBar'
 import { QuestionsProps } from '../QuestionOne'
 
 export function QuestionThree({ onAdvance }: QuestionsProps) {
   return (
     <div className="mx-auto flex flex-col items-center">
-      <LoadingBar progress={100} />
       <div className="text-center py-10">
         <h1 className="text-4xl font-bold text-green-600">PERGUNTA 03</h1>
         <h2 className="text-3xl font-light text-gray-300 py-2">
