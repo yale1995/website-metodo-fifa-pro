@@ -6,13 +6,14 @@ interface CarouselContainerProps {
 }
 
 export function CarouselContainer({ children }: CarouselContainerProps) {
-  const carouselRef = useRef<any>(null)
+  const carouselRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (carouselRef.current) {
         const scrollLeft = carouselRef.current.scrollLeft
-        const itemWidth = carouselRef.current.children[0].offsetWidth
+        const itemWidth = (carouselRef.current.children[0] as HTMLElement)
+          .offsetWidth
         const numItems = carouselRef.current.children.length
         const maxScrollLeft = (numItems - 3) * itemWidth - 3 * 20
 
