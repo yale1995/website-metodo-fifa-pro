@@ -3,20 +3,43 @@ import { CarouselCard } from '@/components/Carousel/CarouselCard'
 import { CarouselContainer } from '@/components/Carousel/CarouselContainer'
 
 import { PaperPlaneRight } from 'phosphor-react'
+import { useEffect, useRef, useState } from 'react'
+import { carouselImages } from '@/data/carousel-images'
+import { Modal } from '../Modal'
 
-export function QuizzInvitation({ onAdvance }: any) {
-  const carouselImages = [
-    '/carousel-images/1.jpeg',
-    '/carousel-images/2.jpeg',
-    '/carousel-images/3.jpeg',
-    '/carousel-images/4.jpeg',
-    '/carousel-images/5.jpeg',
-    '/carousel-images/1.jpeg',
-    '/carousel-images/2.jpeg',
-    '/carousel-images/3.jpeg',
-    '/carousel-images/4.jpeg',
-    '/carousel-images/5.jpeg',
-  ]
+interface QuizzInvitationProps {
+  onAdvance: () => void
+}
+
+export function QuizzInvitation({ onAdvance }: QuizzInvitationProps) {
+  const [onZoom, setOnZoom] = useState<boolean>(false)
+  const [filteredImage, setFilteredImage] = useState<string>('')
+  const cardRef = useRef<HTMLDivElement | null>(null)
+
+  const handleCardZoom = (pathImage: string) => {
+    const selectedImageToZoom = carouselImages.find(
+      (image) => image === pathImage,
+    )
+
+    if (selectedImageToZoom) {
+      setFilteredImage(selectedImageToZoom)
+    }
+    setOnZoom(true)
+  }
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (cardRef.current && !cardRef.current.contains(event.target as Node)) {
+        setOnZoom(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
+
   return (
     <div className="mx-auto w-full">
       <h1 className="text-2xl text-gray-300 text-center">
@@ -28,7 +51,11 @@ export function QuizzInvitation({ onAdvance }: any) {
 
       <CarouselContainer>
         {carouselImages.map((path, index) => (
-          <CarouselCard key={index} pathImage={path} />
+          <CarouselCard
+            key={index}
+            pathImage={path}
+            onClick={() => handleCardZoom(path)}
+          />
         ))}
       </CarouselContainer>
 
@@ -39,14 +66,6 @@ export function QuizzInvitation({ onAdvance }: any) {
         INDEPENDÊNCIA FINANCEIRA!
       </strong>
 
-      {/* <p className="text-2xl text-gray-300 text-center py-4">
-        Para isso, precisamos que você responda 3 perguntas rápidas.
-      </p>
-
-      <span className="text-gray-300 block text-center underline pb-8">
-        CLIQUE NO LINK ABAIXO SE DESEJA RESPONDER E MUDAR DE VIDA
-      </span> */}
-
       <button
         onClick={onAdvance}
         className="flex w-full justify-center items-center bg-green-600 rounded-lg p-4 text-gray-300 gap-2 text-xl font-bold mx-auto mt-4 hover:bg-green-500 hover:text-gray-50 md:w-96"
@@ -54,6 +73,18 @@ export function QuizzInvitation({ onAdvance }: any) {
         <PaperPlaneRight size={24} weight="bold" className="-rotate-45" />
         QUERO MUDAR DE VIDA
       </button>
+
+      {onZoom && (
+        <Modal>
+          <CarouselCard
+            pathImage={filteredImage}
+            ref={cardRef}
+            onClick={() => handleCardZoom(filteredImage)}
+            className={`rounded-lg overflow-hidden absolute left-0 right-0 mx-auto transform scale-150 transition-all duration-700`}
+            style={{ maxWidth: '180px' }}
+          />
+        </Modal>
+      )}
     </div>
   )
 }
