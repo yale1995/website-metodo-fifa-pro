@@ -1,64 +1,35 @@
 import Image from 'next/image'
-import { useState, useEffect, useRef, Fragment } from 'react'
-import { Modal } from '../Modal'
+import {
+  HTMLAttributes,
+  DetailedHTMLProps,
+  forwardRef,
+  ForwardRefRenderFunction,
+} from 'react'
 
-interface CarouselCardProps {
+interface CarouselCardProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   pathImage: string
 }
 
-export function CarouselCard({ pathImage }: CarouselCardProps) {
-  const [onZoom, setOnZoom] = useState(false)
-  const cardRef = useRef<any>(null)
-
-  const handleCardZoom = () => {
-    setOnZoom(true)
-  }
-
-  useEffect(() => {
-    const handleClickOutside = (event: any) => {
-      if (cardRef.current && !cardRef.current.contains(event.target)) {
-        setOnZoom(false)
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
-
+export const CarouselCardBase: ForwardRefRenderFunction<
+  HTMLDivElement,
+  CarouselCardProps
+> = ({ pathImage, ...props }, ref) => {
   return (
-    <Fragment>
-      <div
-        ref={cardRef}
-        onClick={handleCardZoom}
-        className={`shrink-0 snap-start rounded-lg overflow-hidden`}
-      >
-        <Image
-          src={pathImage}
-          alt="Resultados Método FIFA PRO"
-          width={180}
-          height={180}
-        />
-      </div>
-
-      {onZoom && (
-        <Modal>
-          <div
-            ref={cardRef}
-            onClick={handleCardZoom}
-            className={`rounded-lg overflow-hidden absolute transition-all duration-300 left-0 right-0 mx-auto transform scale-150`}
-            style={{ maxWidth: '180px' }}
-          >
-            <Image
-              src={pathImage}
-              alt="Resultados Método FIFA PRO"
-              width={180}
-              height={180}
-            />
-          </div>
-        </Modal>
-      )}
-    </Fragment>
+    <div
+      ref={ref}
+      className={`shrink-0 snap-start rounded-lg overflow-hidden`}
+      {...props}
+    >
+      <Image
+        src={pathImage}
+        alt="Resultados Método FIFA PRO"
+        width={180}
+        height={180}
+        priority={true}
+      />
+    </div>
   )
 }
+
+export const CarouselCard = forwardRef(CarouselCardBase)
