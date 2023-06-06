@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface CarouselCardProps {
   pathImage: string
@@ -7,13 +7,28 @@ interface CarouselCardProps {
 
 export function CarouselCard({ pathImage }: CarouselCardProps) {
   const [onZoom, setOnZoom] = useState(false)
+  const cardRef = useRef<any>(null)
 
   const handleCardZoom = () => {
-    setOnZoom((state) => !state)
+    setOnZoom(true)
   }
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (cardRef.current && !cardRef.current.contains(event.target)) {
+        setOnZoom(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   return (
     <div
+      ref={cardRef}
       onClick={handleCardZoom}
       className={`shrink-0 snap-start rounded-lg overflow-hidden transition-all duration-300 ${
         onZoom ? 'absolute left-0 right-0 mx-auto transform scale-150' : ''
