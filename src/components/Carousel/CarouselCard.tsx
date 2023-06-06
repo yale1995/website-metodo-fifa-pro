@@ -30,8 +30,10 @@ export function CarouselCard({ pathImage }: CarouselCardProps) {
     <div
       ref={cardRef}
       onClick={handleCardZoom}
-      className={`shrink-0 snap-start rounded-lg overflow-hidden transition-all duration-300 ${
-        onZoom ? 'absolute left-0 right-0 mx-auto transform scale-150' : ''
+      className={`shrink-0 snap-start rounded-lg overflow-hidden  ${
+        onZoom
+          ? 'absolute transition-all duration-300 left-0 right-0 mx-auto transform scale-150'
+          : ''
       }`}
       style={{ maxWidth: '180px' }}
     >
