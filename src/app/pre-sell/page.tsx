@@ -34,9 +34,9 @@ export default function PreSellPage() {
   }
 
   const allProgress = {
-    2: 33,
-    3: 66,
-    4: 100,
+    2: 0,
+    3: 33,
+    4: 66,
   } as const
 
   const progressBar = allProgress[step as keyof typeof allProgress]
