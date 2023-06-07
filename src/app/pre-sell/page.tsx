@@ -1,7 +1,7 @@
 'use client'
 
 import { Logo } from '@/components/Logo'
-import { useState } from 'react'
+import { CSSProperties, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 import { QuizzInvitation } from '@/components/QuizzInvitation'
@@ -11,9 +11,18 @@ import { QuestionTwo } from '@/components/QuestionTwo'
 import { QuestionThree } from '@/components/QuestionThree'
 import { LoadingBar } from '@/components/LoadingBar'
 
+import ClipLoader from 'react-spinners/ClipLoader'
+
 export default function PreSellPage() {
   const [step, setStep] = useState(1)
   const router = useRouter()
+
+  const override: CSSProperties = {
+    display: 'block',
+    margin: '0 auto',
+    borderColor: 'green',
+    marginTop: '24px',
+  }
 
   function renderComponent() {
     switch (step) {
@@ -38,7 +47,7 @@ export default function PreSellPage() {
   if (step === 5) {
     setTimeout(() => {
       router.push('/')
-    }, 2000)
+    }, 3000)
   }
 
   const allProgress = {
@@ -54,6 +63,9 @@ export default function PreSellPage() {
     <div className="flex flex-col gap-3 min-h-screen justify-center bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
       <Logo />
       {step > 1 && <LoadingBar progress={progressBar} />}
+      {step === 5 && (
+        <ClipLoader cssOverride={override} color="#fff" size={78} />
+      )}
       {renderComponent()}
     </div>
   )
