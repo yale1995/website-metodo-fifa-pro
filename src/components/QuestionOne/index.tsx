@@ -6,9 +6,12 @@ export function QuestionOne({ onAdvance }: QuestionsProps) {
   return (
     <div className="mx-auto flex flex-col items-center">
       <div className="text-center py-10">
-        <h1 className="text-4xl font-bold text-green-600">PERGUNTA 01</h1>
-        <h2 className="text-3xl font-light text-gray-300 py-2">
-          Você possui renda igual ou superior a R$ 5000?
+        <h1 className="text-3xl font-bold text-green-600 animate-bounce">
+          PERGUNTA 01
+        </h1>
+        <h2 className="text-2xl font-light text-gray-300 py-2">
+          Você está pronto para conhecer mercado mais lucrativo das apostas
+          esportivas?
         </h2>
 
         <div className="flex flex-col gap-4 max-w-xs mx-auto py-4">
