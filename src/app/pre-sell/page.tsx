@@ -2,6 +2,7 @@
 
 import { Logo } from '@/components/Logo'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 import { QuizzInvitation } from '@/components/QuizzInvitation'
 
@@ -12,6 +13,7 @@ import { LoadingBar } from '@/components/LoadingBar'
 
 export default function PreSellPage() {
   const [step, setStep] = useState(1)
+  const router = useRouter()
 
   function renderComponent() {
     switch (step) {
@@ -33,10 +35,17 @@ export default function PreSellPage() {
     setStep((state) => state + 1)
   }
 
+  if (step === 5) {
+    setTimeout(() => {
+      router.push('/')
+    }, 2000)
+  }
+
   const allProgress = {
     2: 0,
     3: 33,
     4: 66,
+    5: 100,
   } as const
 
   const progressBar = allProgress[step as keyof typeof allProgress]
