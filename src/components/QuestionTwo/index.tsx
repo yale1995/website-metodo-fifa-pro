@@ -4,34 +4,37 @@ export function QuestionTwo({ onAdvance }: QuestionsProps) {
   return (
     <div className="mx-auto flex flex-col items-center">
       <div className="text-center py-10">
-        <h1 className="text-4xl font-bold text-green-600">PERGUNTA 02</h1>
-        <h2 className="text-3xl font-light text-gray-300 py-2">
-          Alguma vez já pensou em abrir seu próprio grupo de sinais?
+        <h1 className="text-3xl font-bold text-green-600 animate-bounce">
+          PERGUNTA 02
+        </h1>
+        <h2 className="text-2xl font-light text-gray-300 py-2">
+          Qual o seu nível de conhecimento nesse mercado?
         </h2>
 
         <div className="flex flex-col gap-4 max-w-xs mx-auto py-4">
           <button
             type="button"
-            className="bg-green-600 p-3 rounded-lg text-gray-300 text-2xl font-bold hover:bg-green-500"
+            className="bg-green-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
             onClick={onAdvance}
           >
-            Sim, tenho vontade!
+            Completo iniciante (sem experiência e banca baixa)
           </button>
 
           <button
             type="button"
-            className="bg-red-600 p-3 rounded-lg text-gray-300 text-2xl font-bold hover:bg-green-500"
+            className="bg-red-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
             onClick={onAdvance}
           >
-            Não, nunca pensei sobre!
+            Já tive algum lucro com apostas esportivas mas sem constância
           </button>
 
           <button
             type="button"
-            className="bg-yellow-600 p-3 rounded-lg text-gray-300 text-2xl font-bold hover:bg-green-500"
+            className="bg-yellow-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
             onClick={onAdvance}
           >
-            Não sei o que é isso!
+            Já opero com certa lucratividade mas quero evoluir para o próximo
+            nível!
           </button>
         </div>
       </div>
