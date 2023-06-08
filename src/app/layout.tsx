@@ -23,7 +23,15 @@ export const metadata = {
       'Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!',
     description:
       'Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!',
-    url: '/open-graph.png',
+    url: 'http://metodofifapro.com.br',
+    siteName: 'Método Fifa PRO',
+    images: [
+      {
+        url: '/open-graph.png',
+        width: 800,
+        height: 600,
+      },
+    ],
   },
 }
 
