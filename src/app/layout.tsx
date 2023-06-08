@@ -1,5 +1,8 @@
 import './globals.css'
 import { ReactNode } from 'react'
+import { Roboto } from 'next/font/google'
+
+const roboto = Roboto({ weight: ['400', '700'], subsets: ['cyrillic'] })
 
 interface RootLayoutProps {
   children: ReactNode
@@ -15,12 +18,21 @@ export const metadata = {
   icons: {
     icon: '/favicon-fifapro.png',
   },
+  openGraph: {
+    title:
+      'Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!',
+    description:
+      'Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!',
+    url: '/open-graph.png',
+  },
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR">
-      <body className="md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
+      <body
+        className={`md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm ${roboto.className}`}
+      >
         {children}
       </body>
     </html>
