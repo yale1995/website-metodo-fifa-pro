@@ -11,7 +11,7 @@ export function QuestionThree({ onAdvance }: QuestionsProps) {
           Possui experiências com apostas esportivas?
         </h2>
 
-        <div className="flex flex-col gap-4 max-w-xs mx-auto py-4">
+        <div className="flex flex-col gap-4 max-w-sm md:max-w-lg mx-auto py-4">
           <button
             type="button"
             className="bg-green-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
@@ -22,7 +22,7 @@ export function QuestionThree({ onAdvance }: QuestionsProps) {
 
           <button
             type="button"
-            className="bg-red-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
+            className="bg-blue-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-blue-500"
             onClick={onAdvance}
           >
             R$ 5.000,00 à R$ 10.000,00
@@ -30,7 +30,7 @@ export function QuestionThree({ onAdvance }: QuestionsProps) {
 
           <button
             type="button"
-            className="bg-yellow-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
+            className="bg-yellow-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-yellow-500"
             onClick={onAdvance}
           >
             Acima de R$ 10.000,00
