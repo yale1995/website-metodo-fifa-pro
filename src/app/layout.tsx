@@ -1,7 +1,9 @@
 import './globals.css'
+
 import { ReactNode } from 'react'
 import { Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
+import { UserAnswerContextProvider } from '@/contexts/UserAnswerContext'
 
 const roboto = Roboto({ weight: ['400', '700'], subsets: ['cyrillic'] })
 
@@ -46,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm ${roboto.className}`}
       >
-        {children}
+        <UserAnswerContextProvider>{children}</UserAnswerContextProvider>
       </body>
     </html>
   )
