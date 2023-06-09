@@ -1,4 +1,5 @@
 'use client'
+import ClipLoader from 'react-spinners/ClipLoader'
 
 import { Logo } from '@/components/Logo'
 import { CSSProperties, useState } from 'react'
@@ -11,7 +12,7 @@ import { QuestionTwo } from '@/components/QuestionTwo'
 import { QuestionThree } from '@/components/QuestionThree'
 import { LoadingBar } from '@/components/LoadingBar'
 
-import ClipLoader from 'react-spinners/ClipLoader'
+import { Aprove } from '@/components/Aprove'
 
 export default function PreSellPage() {
   const [step, setStep] = useState(1)
@@ -34,6 +35,8 @@ export default function PreSellPage() {
         return <QuestionTwo onAdvance={handleAdvanceSteps} />
       case 4:
         return <QuestionThree onAdvance={handleAdvanceSteps} />
+      case 5:
+        return <Aprove onAdvance={handleAdvanceSteps} />
 
       default:
         return null
@@ -44,7 +47,7 @@ export default function PreSellPage() {
     setStep((state) => state + 1)
   }
 
-  if (step === 5) {
+  if (step === 6) {
     setTimeout(() => {
       router.push('/')
     }, 2000)
@@ -62,10 +65,10 @@ export default function PreSellPage() {
   return (
     <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
       <Logo />
-      {step > 1 && <LoadingBar progress={progressBar} />}
+      {step > 1 && step < 5 && <LoadingBar progress={progressBar} />}
 
-      {step === 5 && (
-        <div className="my-16">
+      {step === 6 && (
+        <div className="mt-48">
           <ClipLoader cssOverride={override} color="#fff" size={78} />
         </div>
       )}
