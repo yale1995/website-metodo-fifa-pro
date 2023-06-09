@@ -1,4 +1,8 @@
-export const LoadingBar = ({ progress }: any) => {
+interface LoadingBarProps {
+  progress: number
+}
+
+export const LoadingBar = ({ progress }: LoadingBarProps) => {
   return (
     <div className="relative mx-auto w-full h-10 bg-gray-200 rounded overflow-hidden md:max-w-lg my-14">
       <div
