@@ -10,8 +10,11 @@ export function QuestionOne({ onAdvance }: QuestionsProps) {
           PERGUNTA 01
         </h1>
         <h2 className="text-2xl font-light text-gray-300 py-2">
-          Você está pronto para conhecer mercado mais lucrativo das apostas
-          esportivas?
+          Você está pronto para conhecer{' '}
+          <span className="text-yellow-300">
+            os segredos do mercardo mais lucrativo
+          </span>{' '}
+          das apostas esportivas?
         </h2>
 
         <div className="flex flex-col gap-4 max-w-xs mx-auto py-4">
