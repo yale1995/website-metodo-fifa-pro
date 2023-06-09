@@ -47,7 +47,7 @@ export default function PreSellPage() {
   if (step === 5) {
     setTimeout(() => {
       router.push('/')
-    }, 3000)
+    }, 2000)
   }
 
   const allProgress = {
@@ -63,8 +63,11 @@ export default function PreSellPage() {
     <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
       <Logo />
       {step > 1 && <LoadingBar progress={progressBar} />}
+
       {step === 5 && (
-        <ClipLoader cssOverride={override} color="#fff" size={78} />
+        <div className="my-16">
+          <ClipLoader cssOverride={override} color="#fff" size={78} />
+        </div>
       )}
       {renderComponent()}
     </div>
