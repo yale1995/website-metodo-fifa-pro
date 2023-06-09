@@ -1,6 +1,8 @@
-import { QuestionsProps } from '../QuestionOne'
+interface QuestionsTwoProps {
+  selectUserTypeAndAdvance: (userAnswer: string) => void
+}
 
-export function QuestionTwo({ onAdvance }: QuestionsProps) {
+export function QuestionTwo({ selectUserTypeAndAdvance }: QuestionsTwoProps) {
   return (
     <div className="mx-auto flex flex-col items-center">
       <div className="text-center py-10">
@@ -15,7 +17,11 @@ export function QuestionTwo({ onAdvance }: QuestionsProps) {
           <button
             type="button"
             className="bg-green-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-green-500"
-            onClick={onAdvance}
+            onClick={() =>
+              selectUserTypeAndAdvance(
+                'TE ENSINAREMOS DESDE OS FUNDAMENTOS ATÉ OS TÓPICOS MAIS AVANÇADOS DO MERCADO MAIS LUCRATIVO DAS APOSTAS ESPORTIVAS',
+              )
+            }
           >
             Completo iniciante (sem experiência e banca baixa)
           </button>
@@ -23,7 +29,11 @@ export function QuestionTwo({ onAdvance }: QuestionsProps) {
           <button
             type="button"
             className="bg-blue-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-blue-500"
-            onClick={onAdvance}
+            onClick={() =>
+              selectUserTypeAndAdvance(
+                'TE AJUDAREMOS A CONQUISTAR LUCROS DE FORMA CONSTANTE ATRAVÉS DOS MÉTODOS QUE OS MAIORES APOSTADORES DE FIFA NO BRASIL FAZEM ATÉ R$ 40.000 MENSAIS',
+              )
+            }
           >
             Já tive algum lucro com apostas esportivas mas sem constância
           </button>
@@ -31,7 +41,11 @@ export function QuestionTwo({ onAdvance }: QuestionsProps) {
           <button
             type="button"
             className="bg-yellow-600 p-3 rounded-lg text-gray-300 text-lg font-bold hover:bg-yellow-500"
-            onClick={onAdvance}
+            onClick={() =>
+              selectUserTypeAndAdvance(
+                'TE LEVAREMOS AO PRÓXIMO NÍVEL ATRAVÉS DOS CONCEITOS UTILIZADOS PELOS MAIORES APOSTADORES DE FIFA NO BRASIL, VOCÊ PODERÁ CONQUISTAR RENDIMENTOS DE ATÉ R$ 40.000 MENSAIS',
+              )
+            }
           >
             Já opero com certa lucratividade mas quero evoluir para o próximo
             nível!
