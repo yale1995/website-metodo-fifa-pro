@@ -41,7 +41,7 @@ export function QuizzInvitation({ onAdvance }: QuizzInvitationProps) {
   }, [])
 
   return (
-    <div className="mx-auto w-full">
+    <div className="mx-auto pt-4 flex-1 flex flex-col justify-between w-full">
       <h1 className="text-2xl text-gray-300 text-center">
         ESTAMOS PROCURANDO PESSOAS QUE BUSCAM
         <strong className="text-yellow-500 block pt-2">
@@ -61,10 +61,10 @@ export function QuizzInvitation({ onAdvance }: QuizzInvitationProps) {
 
       <h2 className="text-xl text-gray-300 text-center">
         Descubra como dominar estratégias de apostas no FIFA e alcance sua{' '}
+        <strong className="text-xl text-yellow-500 text-center block">
+          INDEPENDÊNCIA FINANCEIRA!
+        </strong>
       </h2>
-      <strong className="text-xl text-yellow-500 text-center block">
-        INDEPENDÊNCIA FINANCEIRA!
-      </strong>
 
       <button
         onClick={onAdvance}
