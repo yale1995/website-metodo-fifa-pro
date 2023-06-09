@@ -1,6 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import { Roboto } from 'next/font/google'
+import type { Metadata } from 'next'
 
 const roboto = Roboto({ weight: ['400', '700'], subsets: ['cyrillic'] })
 
@@ -8,13 +9,17 @@ interface RootLayoutProps {
   children: ReactNode
 }
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
     'Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!',
   description:
     'Descubra como dominar estratégias de apostas no FIFA e alcançar a INDEPENDÊNCIA FINANCEIRA!',
-  viewport: 'width=device-width, initial-scale=1',
-  'theme-color': '#1e1b4b',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  themeColor: '#1e1b4b',
   icons: {
     icon: '/favicon-fifapro.png',
   },
