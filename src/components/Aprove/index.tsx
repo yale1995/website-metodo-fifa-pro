@@ -1,14 +1,15 @@
 import { QuestionsProps } from '../QuestionOne'
+import { useContext } from 'react'
+import { UserAnswerContext } from '@/contexts/UserAnswerContext'
 
 export function Aprove({ onAdvance }: QuestionsProps) {
+  const { userAnswer } = useContext(UserAnswerContext)
   return (
     <div className="mx-auto flex-1 flex flex-col justify-center items-center">
       <div className="text-center py-10">
         <h1 className="text-xl font-normal text-gray-300 md:max-w-2xl">
           DE ACORDO COM AS SUAS RESPOSTAS CONCLUÍMOS QUE{' '}
-          <span className="text-yellow-300">
-            VOCÊ PODERÁ EVOLUIR SIGNIFICATIVAMENTO COM O MÉTODO FIFA PRO
-          </span>
+          <span className="text-yellow-300">{userAnswer}</span>
         </h1>
         <h2 className="text-3xl font-bold text-gray-300 py-10 animate-bounce">
           DECIDIMOS TE AJUDAR
