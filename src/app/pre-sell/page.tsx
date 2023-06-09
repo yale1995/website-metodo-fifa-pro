@@ -2,7 +2,8 @@
 import ClipLoader from 'react-spinners/ClipLoader'
 
 import { Logo } from '@/components/Logo'
-import { CSSProperties, useState } from 'react'
+import { CSSProperties, useState, useContext } from 'react'
+import { UserAnswerContext } from '@/contexts/UserAnswerContext'
 import { useRouter } from 'next/navigation'
 
 import { QuizzInvitation } from '@/components/QuizzInvitation'
@@ -18,6 +19,8 @@ export default function PreSellPage() {
   const [step, setStep] = useState(1)
   const router = useRouter()
 
+  const { setUserAnswer } = useContext(UserAnswerContext)
+
   const override: CSSProperties = {
     display: 'block',
     margin: '0 auto',
@@ -32,7 +35,11 @@ export default function PreSellPage() {
       case 2:
         return <QuestionOne onAdvance={handleAdvanceSteps} />
       case 3:
-        return <QuestionTwo onAdvance={handleAdvanceSteps} />
+        return (
+          <QuestionTwo
+            selectUserTypeAndAdvance={handleAdvanceAndSelectUserType}
+          />
+        )
       case 4:
         return <QuestionThree onAdvance={handleAdvanceSteps} />
       case 5:
@@ -45,6 +52,11 @@ export default function PreSellPage() {
 
   function handleAdvanceSteps() {
     setStep((state) => state + 1)
+  }
+
+  function handleAdvanceAndSelectUserType(userAnswer: string): void {
+    setUserAnswer(userAnswer)
+    handleAdvanceSteps()
   }
 
   if (step === 6) {
