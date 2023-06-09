@@ -10,7 +10,7 @@ type UserAnswerContextType = {
   setUserAnswer: (newState: string) => void
 }
 
-const UserAnswerContext = createContext({} as UserAnswerContextType)
+export const UserAnswerContext = createContext({} as UserAnswerContextType)
 
 export function UserAnswerContextProvider({
   children,
