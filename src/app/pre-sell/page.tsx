@@ -51,7 +51,7 @@ export default function PreSellPage() {
   }
 
   const allProgress = {
-    2: 0,
+    2: 10,
     3: 33,
     4: 66,
     5: 100,
