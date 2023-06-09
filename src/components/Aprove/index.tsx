@@ -2,7 +2,7 @@ import { QuestionsProps } from '../QuestionOne'
 
 export function Aprove({ onAdvance }: QuestionsProps) {
   return (
-    <div className="mx-auto flex flex-col items-center">
+    <div className="mx-auto flex-1 flex flex-col justify-center items-center">
       <div className="text-center py-10">
         <h1 className="text-xl font-normal text-gray-300 md:max-w-2xl">
           DE ACORDO COM AS SUAS RESPOSTAS CONCLUÍMOS QUE{' '}
@@ -10,7 +10,7 @@ export function Aprove({ onAdvance }: QuestionsProps) {
             VOCÊ PODERÁ EVOLUIR SIGNIFICATIVAMENTO COM O MÉTODO FIFA PRO
           </span>
         </h1>
-        <h2 className="text-3xl font-bold text-gray-300 py-14 animate-bounce">
+        <h2 className="text-3xl font-bold text-gray-300 py-10 animate-bounce">
           DECIDIMOS TE AJUDAR
         </h2>
 
