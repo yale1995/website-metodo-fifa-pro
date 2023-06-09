@@ -60,7 +60,7 @@ export default function PreSellPage() {
   const progressBar = allProgress[step as keyof typeof allProgress]
 
   return (
-    <div className="flex flex-col gap-3 min-h-screen border-2 bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
+    <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
       <Logo />
       {step > 1 && <LoadingBar progress={progressBar} />}
       {step === 5 && (
