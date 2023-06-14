@@ -36,7 +36,7 @@ export function SocialValidation() {
   }, [])
   return (
     <section className="py-12">
-      <h2 className="text-3xl font-bold text-center text-yellow-400 py-4">
+      <h2 className="text-3xl font-bold text-center text-yellow-300 py-4">
         RESULTADOS DOS NOSSOS ALUNOS
       </h2>
       <CarouselContainer>
