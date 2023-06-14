@@ -11,7 +11,7 @@ interface CarouselCardProps
   pathImage: string
 }
 
-export const CarouselCardBase: ForwardRefRenderFunction<
+const CarouselCardBase: ForwardRefRenderFunction<
   HTMLDivElement,
   CarouselCardProps
 > = ({ pathImage, ...props }, ref) => {
