@@ -30,8 +30,8 @@ export const metadata: Metadata = {
       'Transforme a sua vida financeira através do Método FIFA PRO. Descubra como dominar estratégias de apostas no FIFA e alcance a sua independência financeira!',
     description:
       'Descubra como dominar estratégias de apostas no FIFA e alcançar a INDEPENDÊNCIA FINANCEIRA!',
-    url: 'http://metodofifapro.com.br',
-    siteName: 'Método Fifa PRO',
+    url: 'http://metodofifapro.com',
+    siteName: 'Método FIFA PRO',
     images: [
       {
         url: '/open-graph.png',
@@ -45,6 +45,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR">
+      <title>Mude de Vida com FIFA PRO</title>
       <body
         className={`md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm ${roboto.className}`}
       >
