@@ -1,4 +1,5 @@
 import { Logo } from '@/components/Logo'
+import { SocialValidation } from '@/components/SocialValidation'
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
           QUERO ALCANÇAR LUCROS MENSAIS CONSISTENTES!
         </button>
       </div>
+
+      <SocialValidation />
     </div>
   )
 }
