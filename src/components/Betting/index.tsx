@@ -19,25 +19,26 @@ export function Betting({ order }: BettingProps) {
   }
 
   return (
-    <section className="md:py-28 md:p-8 py-8 px-4 bg-green-600 shadow-xl">
+    <section className="md:py-4 md:p-8 py-2 px-4 bg-yellow-600 shadow-xl shadow-black">
       <div className="flex flex-col gap-4 max-w-6xl w-full mx-auto justify-center items-center">
         {order === 1 && (
-          <h2 className="text-center text-2xl md:text-3xl md:font-bold text-gray-100">
-            {'"'}O método utilizado pelos{' '}
-            <span className="text-yellow-400">
+          <h2 className="text-center md:text-2xl text-xl font-light text-gray-100">
+            O método utilizado pelos
+            <span className="text-yellow-100 font-normal">
               {' '}
               maiores apostadores de FIFA
             </span>{' '}
             do Brasil
-            {'"'}
           </h2>
         )}
 
         {order === 2 && (
-          <h2 className="text-center text-2xl md:text-3xl md:font-bold text-gray-100">
-            Crie{' '}
-            <span className="text-yellow-400">seu próprio grupo de sinais</span>{' '}
-            e faça mais dinheiro 🚀
+          <h2 className="text-center md:text-2xl text-xl font-light text-gray-100">
+            Nunca mais{' '}
+            <span className="text-yellow-100 font-normal">
+              pague grupo de sinais.
+            </span>{' '}
+            Seja você o tipster 🚀
           </h2>
         )}
       </div>
