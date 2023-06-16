@@ -47,31 +47,39 @@ export function SocialValidation() {
   }
 
   return (
-    <section className="py-12">
-      <h2 className="text-3xl font-bold text-center text-yellow-300 py-4">
-        RESULTADOS DOS NOSSOS ALUNOS
-      </h2>
-      <CarouselContainer>
-        {printslImages.map((image, index) => (
-          <CarouselCard
-            pathImage={image}
-            key={index}
-            onClick={() => handleCardZoom(image)}
-          />
-        ))}
-      </CarouselContainer>
+    <section className="py-12 bg-indigo-950 backdrop-brightness-75">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <div className="flex-shrink-0 max-w-sm">
+          <h2 className="text-3xl font-bold md:text-left text-center text-yellow-400">
+            Resultados dos nossos alunos
+          </h2>
+          <span className="text-gray-300 text-lg block md:text-left text-center">
+            Alunos que aplicaram o Método FIFA PRO já estão obtendo resultados
+            no mercado mais lucrativos das apostas.
+          </span>
+        </div>
+        <CarouselContainer>
+          {printslImages.map((image, index) => (
+            <CarouselCard
+              pathImage={image}
+              key={index}
+              onClick={() => handleCardZoom(image)}
+            />
+          ))}
+        </CarouselContainer>
 
-      {onZoom && (
-        <Modal>
-          <CarouselCard
-            pathImage={filteredImage}
-            ref={cardRef}
-            onClick={() => handleCardZoom(filteredImage)}
-            className={`rounded-lg overflow-hidden absolute left-0 right-0 bottom-1/2 mx-auto transform scale-150 transition-all duration-700`}
-            style={{ maxWidth: '180px' }}
-          />
-        </Modal>
-      )}
+        {onZoom && (
+          <Modal>
+            <CarouselCard
+              pathImage={filteredImage}
+              ref={cardRef}
+              onClick={() => handleCardZoom(filteredImage)}
+              className={`rounded-lg overflow-hidden absolute left-0 right-0 bottom-1/2 mx-auto transform scale-150 transition-all duration-700`}
+              style={{ maxWidth: '180px' }}
+            />
+          </Modal>
+        )}
+      </div>
     </section>
   )
 }
