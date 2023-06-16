@@ -7,7 +7,7 @@ import { Fragment } from 'react'
 import { FAQ } from '@/components/FAQ'
 import { Button } from '@/components/Button'
 
-export default function Home() {
+export default async function Home() {
   const videos = [
     {
       name: 'Ayrton Rafael',
