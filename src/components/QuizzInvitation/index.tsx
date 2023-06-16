@@ -65,14 +65,15 @@ export function QuizzInvitation({ onAdvance }: QuizzInvitationProps) {
           INDEPENDÊNCIA FINANCEIRA!
         </strong>
       </h2>
-
-      <button
-        onClick={onAdvance}
-        className="flex w-full justify-center items-center bg-green-600 rounded-lg p-4 text-gray-300 gap-2 text-xl font-bold mx-auto mt-4 hover:bg-green-500 hover:text-gray-50 md:w-96"
-      >
-        <PaperPlaneRight size={24} weight="bold" className="-rotate-45" />
-        QUERO MUDAR DE VIDA
-      </button>
+      <div className="px-2">
+        <button
+          onClick={onAdvance}
+          className="flex w-full justify-center items-center bg-green-600 rounded-lg p-4 text-gray-300 gap-2 text-xl font-bold md:mx-auto mt-4 hover:bg-green-500 hover:text-gray-50 md:w-96"
+        >
+          <PaperPlaneRight size={24} weight="bold" className="-rotate-45" />
+          QUERO MUDAR DE VIDA
+        </button>
+      </div>
 
       {onZoom && (
         <Modal>
