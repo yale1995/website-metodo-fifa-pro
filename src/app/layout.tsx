@@ -46,9 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR">
       <title>Mude de Vida com FIFA PRO</title>
-      <body
-        className={`md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm ${roboto.className}`}
-      >
+      <body className={roboto.className}>
         <UserAnswerContextProvider>{children}</UserAnswerContextProvider>
       </body>
     </html>
