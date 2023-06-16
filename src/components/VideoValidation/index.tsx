@@ -2,7 +2,17 @@
 
 import { useEffect, useState } from 'react'
 
-export function VideoValidation() {
+interface VideoValidationProps {
+  name: string
+  description: string
+  path: string
+}
+
+export function VideoValidation({
+  name,
+  description,
+  path,
+}: VideoValidationProps) {
   const [showComponent, setShowComponent] = useState<boolean>(false)
 
   useEffect(() => {
@@ -15,25 +25,28 @@ export function VideoValidation() {
     return null // Return null if showComponent is false
   }
 
-  return (
-    <section className="max-w-7xl w-full mx-auto gap-4 p-2 md:p-8">
-      <h2 className="text-3xl font-bold text-center text-yellow-300 py-4">
-        DEPOIMENTOS DE ALUNOS
-      </h2>
-      <div className="flex max-w-6xl mx-auto gap-8 md:flex flex-col">
-        <iframe
-          allowFullScreen
-          src="https://www.youtube.com/embed/EIgPhJeI_mY"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          className="w-full md:h-[450px] h-96 rounded-lg"
-        />
+  const isAyrtonRafael = name === 'Ayrton Rafael'
 
-        <iframe
-          allowFullScreen
-          src="https://www.youtube.com/embed/xIBRk8yrju4"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          className="w-full md:h-[450px] h-96 rounded-lg"
-        />
+  return (
+    <section className="py-12 px-2 bg-indigo-950 backdrop-brightness-75">
+      <div
+        className={`max-w-6xl mx-auto flex flex-col ${
+          isAyrtonRafael ? 'md:flex-row-reverse' : 'md:flex-row'
+        } items-center gap-8`}
+      >
+        <div className="flex-shrink-0 max-w-sm">
+          <h2 className="text-3xl font-bold md:text-left text-center text-yellow-400">
+            {name}
+          </h2>
+          <span className="text-gray-300 text-lg block md:text-left text-center">
+            {description}
+          </span>
+        </div>
+        <div className="flex w-full shadow-black shadow-lg">
+          <video controls className="rounded-lg">
+            <source src={path} />
+          </video>
+        </div>
       </div>
     </section>
   )
