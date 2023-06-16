@@ -75,16 +75,18 @@ export default function PreSellPage() {
   const progressBar = allProgress[step as keyof typeof allProgress]
 
   return (
-    <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
-      <Logo />
-      {step > 1 && step < 5 && <LoadingBar progress={progressBar} />}
+    <div className="md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
+      <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 py-4">
+        <Logo />
+        {step > 1 && step < 5 && <LoadingBar progress={progressBar} />}
 
-      {step === 6 && (
-        <div className="mt-48">
-          <ClipLoader cssOverride={override} color="#fff" size={78} />
-        </div>
-      )}
-      {renderComponent()}
+        {step === 6 && (
+          <div className="mt-48">
+            <ClipLoader cssOverride={override} color="#fff" size={78} />
+          </div>
+        )}
+        {renderComponent()}
+      </div>
     </div>
   )
 }
