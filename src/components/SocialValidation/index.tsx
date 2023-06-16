@@ -9,6 +9,7 @@ import { Modal } from '../Modal'
 export function SocialValidation() {
   const [onZoom, setOnZoom] = useState<boolean>(false)
   const [filteredImage, setFilteredImage] = useState<string>('')
+  const [showComponent, setShowComponent] = useState<boolean>(false)
   const cardRef = useRef<HTMLDivElement | null>(null)
 
   const handleCardZoom = (pathImage: string) => {
@@ -34,6 +35,17 @@ export function SocialValidation() {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [])
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowComponent(true)
+    }, 20000)
+  }, [])
+
+  if (!showComponent) {
+    return null // Return null if showComponent is false
+  }
+
   return (
     <section className="py-12">
       <h2 className="text-3xl font-bold text-center text-yellow-300 py-4">
@@ -55,7 +67,7 @@ export function SocialValidation() {
             pathImage={filteredImage}
             ref={cardRef}
             onClick={() => handleCardZoom(filteredImage)}
-            className={`rounded-lg overflow-hidden absolute left-0 right-0 bottom-56 mx-auto transform scale-150 transition-all duration-700`}
+            className={`rounded-lg overflow-hidden absolute left-0 right-0 bottom-1/2 mx-auto transform scale-150 transition-all duration-700`}
             style={{ maxWidth: '180px' }}
           />
         </Modal>
