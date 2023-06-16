@@ -47,7 +47,7 @@ export function SocialValidation() {
   }
 
   return (
-    <section className="py-12 bg-indigo-950 backdrop-brightness-75">
+    <section className="py-12 md:py-24 bg-indigo-950 backdrop-brightness-75">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="flex-shrink-0 max-w-sm">
           <h2 className="text-3xl font-bold md:text-left text-center text-yellow-400">
@@ -74,7 +74,7 @@ export function SocialValidation() {
               pathImage={filteredImage}
               ref={cardRef}
               onClick={() => handleCardZoom(filteredImage)}
-              className={`rounded-lg overflow-hidden absolute left-0 right-0 bottom-1/2 mx-auto transform scale-150 transition-all duration-700`}
+              className={`rounded-lg overflow-hidden absolute left-0 right-0 bottom-auto mx-auto transform scale-150 transition-all duration-700`}
               style={{ maxWidth: '180px' }}
             />
           </Modal>
