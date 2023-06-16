@@ -1,11 +1,13 @@
 import { Logo } from '@/components/Logo'
 import { SocialValidation } from '@/components/SocialValidation'
+import { VideoValidation } from '@/components/VideoValidation'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 px-2 py-4">
+    <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 pt-4">
       <Logo />
-      <div className="max-w-screen-lg flex-1 w-full mx-auto rounded-lg overflow-hidden">
+      <div className="max-w-screen-lg p-2 flex-1 w-full mx-auto rounded-lg overflow-hidden">
         <h1 className="text-gray-300 max-w-xl mx-auto text-center text-2xl font-bold py-4">
           ASSISTA AO VÍDEO ABAIXO E DESCUBRA COMO{' '}
           <span className="text-yellow-300">
@@ -24,6 +26,8 @@ export default function Home() {
       </div>
 
       <SocialValidation />
+      <VideoValidation />
+      <Footer />
     </div>
   )
 }
