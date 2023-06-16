@@ -4,7 +4,7 @@ interface QuestionsTwoProps {
 
 export function QuestionTwo({ selectUserTypeAndAdvance }: QuestionsTwoProps) {
   return (
-    <div className="mx-auto flex flex-col items-center">
+    <div className="mx-auto px-2 flex flex-col items-center">
       <div className="text-center py-10">
         <h1 className="text-3xl font-bold text-green-600 animate-bounce">
           PERGUNTA 02
