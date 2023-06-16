@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { Logo } from '../Logo'
 
 export function Footer() {
   const [showComponent, setShowComponent] = useState(false)
@@ -15,18 +16,11 @@ export function Footer() {
   }
 
   return (
-    <footer className="px-2 py-6 bg-indigo-300 bg-opacity-25">
+    <footer className="px-2 py-6 bg-indigo-700">
       <div className="flex flex-col gap-4 items-center max-w-7xl mx-auto md:flex-row ">
-        <p className="text-2xl md:text-4xl text-center text-gray-300">
-          MÉTODO
-          <br />
-          <span className="font-bold text-3xl md:text-5xl">FIFA</span>
-          <span className="text-green-600 font-bold text-3xl md:text-5xl">
-            PRO
-          </span>
-        </p>
+        <Logo isFooter={true} />
 
-        <p className="text-xs text-center text-gray-300 md:text-left md:text-sm">
+        <p className="text-xs text-center text-gray-300 md:text-left">
           Este site não é afiliado ao Facebook ou a qualquer entidade do
           Facebook. Depois que você sair do Facebook, a responsabilidade não é
           deles e sim do nosso site. Fazemos todos os esforços para indicar
