@@ -5,7 +5,7 @@ import { UserAnswerContext } from '@/contexts/UserAnswerContext'
 export function Aprove({ onAdvance }: QuestionsProps) {
   const { userAnswer } = useContext(UserAnswerContext)
   return (
-    <div className="mx-auto flex-1 flex flex-col justify-center items-center">
+    <div className="mx-auto px-2 flex-1 flex flex-col justify-center items-center">
       <div className="text-center py-10">
         <h1 className="text-xl font-normal text-gray-300 md:max-w-2xl">
           DE ACORDO COM AS SUAS RESPOSTAS CONCLUÍMOS QUE{' '}
