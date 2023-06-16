@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 pt-4">
           <Logo />
           <div className="max-w-screen-lg flex-1 w-full mx-auto rounded-lg overflow-hidden">
-            <h1 className="text-gray-300 max-w-xl mx-auto text-center text-2xl font-bold px-2">
+            <h1 className="text-gray-300 max-w-xl mx-auto text-center text-2xl font-bold py-8 px-2">
               ASSISTA AO VÍDEO ABAIXO E DESCUBRA COMO{' '}
               <span className="text-yellow-400">
                 CONQUISTAR LUCROS DE ATÉ R$ 40.000 MENSAIS
