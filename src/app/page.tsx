@@ -4,6 +4,7 @@ import { VideoValidation } from '@/components/VideoValidation'
 import { Footer } from '../components/Footer'
 
 export default function Home() {
+  console.log('Yure is gay')
   return (
     <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 pt-4">
       <Logo />
