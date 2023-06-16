@@ -5,7 +5,10 @@ import { Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
 import { UserAnswerContextProvider } from '@/contexts/UserAnswerContext'
 
-const roboto = Roboto({ weight: ['400', '700'], subsets: ['cyrillic'] })
+const roboto = Roboto({
+  weight: ['100', '300', '400', '700'],
+  subsets: ['cyrillic'],
+})
 
 interface RootLayoutProps {
   children: ReactNode
