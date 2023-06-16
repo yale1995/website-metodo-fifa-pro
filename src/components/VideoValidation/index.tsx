@@ -43,7 +43,7 @@ export function VideoValidation({
           </span>
         </div>
         <div className="flex w-full shadow-black shadow-lg">
-          <video controls className="rounded-lg">
+          <video controls autoPlay loop muted className="rounded-lg">
             <source src={path} />
           </video>
         </div>
