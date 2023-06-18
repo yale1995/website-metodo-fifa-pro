@@ -39,43 +39,36 @@ export default function Privacy() {
             </p>
           </div>
           <div>
-            <h1 className="md:text-3xl text-xl font-bold">2. Uso de Licença</h1>
+            <h1 className="md:text-3xl text-xl font-bold">
+              Política de Cookies Doctor Green Consultoria
+            </h1>
             <p className="text-sm md:text-base">
-              É concedida permissão para baixar temporariamente uma cópia dos
-              materiais (informações ou software) no site Método FIFA PRO,
-              apenas para visualização transitória pessoal e não comercial. Esta
-              é a concessão de uma licença, não uma transferência de título e,
-              sob esta licença, você não pode:{' '}
+              O Método FIFA PRO não analisou todos os sites vinculados ao seu
+              site e não é responsável pelo conteúdo de nenhum site vinculado. A
+              inclusão de qualquer link não implica endosso por Método FIFA PRO
+              do site. O uso de qualquer site vinculado é por conta e risco do
+              usuário.
             </p>
-            <ol className="py-4 text-sm md:text-base list-decimal px-4">
-              <li className="text-yellow-400">
-                modificar ou copiar os materiais;{' '}
-              </li>
-              <li className="text-yellow-400">
-                usar os materiais para qualquer finalidade comercial ou para
-                exibição pública (comercial ou não comercial);{' '}
-              </li>
-              <li className="text-yellow-400">
-                tentar descompilar ou fazer engenharia reversa de qualquer
-                software contido no site Método FIFA PRO;{' '}
-              </li>
-              <li className="text-yellow-400">
-                remover quaisquer direitos autorais ou outras notações de
-                propriedade dos materiais; ou
-              </li>
-              <li className="text-yellow-400">
-                transferir os materiais para outra pessoa ou ‘espelhe’ os
-                materiais em qualquer outro servidor.
-              </li>
-            </ol>
 
-            <p className="text-sm md:text-base">
-              Esta licença será automaticamente rescindida se você violar alguma
-              dessas restrições e poderá ser rescindida por Método FIFA PRO a
-              qualquer momento. Ao encerrar a visualização desses materiais ou
-              após o término desta licença, você deve apagar todos os materiais
-              baixados em sua posse, seja em formato eletrónico ou impresso.
-            </p>
+            <div className="py-4">
+              <h2 className="text-xl font-bold">Modificações</h2>
+              <p className="text-sm md:text-base">
+                O Método FIFA PRO a pode revisar estes termos de serviço do site
+                a qualquer momento, sem aviso prévio. Ao usar este site, você
+                concorda em ficar vinculado à versão atual desses termos de
+                serviço.
+              </p>
+            </div>
+
+            <div className="py-4">
+              <h2 className="text-xl font-bold">Lei aplicável</h2>
+              <p className="text-sm md:text-base">
+                Estes termos e condições são regidos e interpretados de acordo
+                com as leis do Método FIFA PRO e você se submete
+                irrevogavelmente à jurisdição exclusiva dos tribunais naquele
+                estado ou localidade.
+              </p>
+            </div>
           </div>
           <div>
             <h1 className="md:text-3xl text-xl font-bold">
