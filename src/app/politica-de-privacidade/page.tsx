@@ -42,21 +42,18 @@ export default function Privacy() {
             <h1 className="md:text-3xl text-xl font-bold">
               Política de Cookies Doctor Green Consultoria
             </h1>
-            <p className="text-sm md:text-base">
-              O Método FIFA PRO não analisou todos os sites vinculados ao seu
-              site e não é responsável pelo conteúdo de nenhum site vinculado. A
-              inclusão de qualquer link não implica endosso por Método FIFA PRO
-              do site. O uso de qualquer site vinculado é por conta e risco do
-              usuário.
-            </p>
 
             <div className="py-4">
-              <h2 className="text-xl font-bold">Modificações</h2>
+              <h2 className="text-xl font-bold">O que são cookies?</h2>
               <p className="text-sm md:text-base">
-                O Método FIFA PRO a pode revisar estes termos de serviço do site
-                a qualquer momento, sem aviso prévio. Ao usar este site, você
-                concorda em ficar vinculado à versão atual desses termos de
-                serviço.
+                Como é prática comum em quase todos os sites profissionais, este
+                site usa cookies, que são pequenos arquivos baixados no seu
+                computador, para melhorar sua experiência. Esta página descreve
+                quais informações eles coletam, como as usamos e por que às
+                vezes precisamos armazenar esses cookies. Também
+                compartilharemos como você pode impedir que esses cookies sejam
+                armazenados, no entanto, isso pode fazer o downgrade ou
+                ‘quebrar’ certos elementos da funcionalidade do site.
               </p>
             </div>
 
