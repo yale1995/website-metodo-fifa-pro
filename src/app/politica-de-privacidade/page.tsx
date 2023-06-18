@@ -12,14 +12,30 @@ export default function Privacy() {
               Política de Privacidade
             </h1>
             <p className="text-sm md:text-base">
-              Ao acessar ao site{' '}
-              <span className="text-green-600 font-bold">Método FIFA PRO</span>,
-              concorda em cumprir estes termos de serviço, todas as leis e
-              regulamentos aplicáveis ​​e concorda que é responsável pelo
-              cumprimento de todas as leis locais aplicáveis. Se você não
-              concordar com algum desses termos, está proibido de usar ou
-              acessar este site. Os materiais contidos neste site são protegidos
-              pelas leis de direitos autorais e marcas comerciais aplicáveis.
+              A sua privacidade é importante para nós. É política do Doctor
+              Green Consultoria respeitar a sua privacidade em relação a
+              qualquer informação sua que possamos coletar no site Doctor Green
+              Consultoria, e outros sites que possuímos e operamos. Solicitamos
+              informações pessoais apenas quando realmente precisamos delas para
+              lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com
+              o seu conhecimento e consentimento. Também informamos por que
+              estamos coletando e como será usado. Apenas retemos as informações
+              coletadas pelo tempo necessário para fornecer o serviço
+              solicitado. Quando armazenamos dados, protegemos dentro de meios
+              comercialmente aceitáveis ​​para evitar perdas e roubos, bem como
+              acesso, divulgação, cópia, uso ou modificação não autorizados. Não
+              compartilhamos informações de identificação pessoal publicamente
+              ou com terceiros, exceto quando exigido por lei. O nosso site pode
+              ter links para sites externos que não são operados por nós. Esteja
+              ciente de que não temos controle sobre o conteúdo e práticas
+              desses sites e não podemos aceitar responsabilidade por suas
+              respectivas políticas de privacidade. Você é livre para recusar a
+              nossa solicitação de informações pessoais, entendendo que talvez
+              não possamos fornecer alguns dos serviços desejados. O uso
+              continuado de nosso site será considerado como aceitação de nossas
+              práticas em torno de privacidade e informações pessoais. Se você
+              tiver alguma dúvida sobre como lidamos com dados do usuário e
+              informações pessoais, entre em contacto connosco.
             </p>
           </div>
           <div>
