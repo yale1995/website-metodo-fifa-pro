@@ -58,12 +58,15 @@ export default function Privacy() {
             </div>
 
             <div className="py-4">
-              <h2 className="text-xl font-bold">Lei aplicável</h2>
+              <h2 className="text-xl font-bold">Como usamos os cookies?</h2>
               <p className="text-sm md:text-base">
-                Estes termos e condições são regidos e interpretados de acordo
-                com as leis do Método FIFA PRO e você se submete
-                irrevogavelmente à jurisdição exclusiva dos tribunais naquele
-                estado ou localidade.
+                Utilizamos cookies por vários motivos, detalhados abaixo.
+                Infelizmente, na maioria dos casos, não existem opções padrão do
+                setor para desativar os cookies sem desativar completamente a
+                funcionalidade e os recursos que eles adicionam a este site. É
+                recomendável que você deixe todos os cookies se não tiver
+                certeza se precisa ou não deles, caso sejam usados ​​para
+                fornecer um serviço que você usa.
               </p>
             </div>
           </div>
