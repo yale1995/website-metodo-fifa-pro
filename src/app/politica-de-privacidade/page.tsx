@@ -8,7 +8,9 @@ export default function Privacy() {
         <Logo />
         <div className="flex flex-col gap-4">
           <div>
-            <h1 className="md:text-3xl text-xl font-bold">1. Termos</h1>
+            <h1 className="md:text-3xl text-xl font-bold">
+              Política de Privacidade
+            </h1>
             <p className="text-sm md:text-base">
               Ao acessar ao site{' '}
               <span className="text-green-600 font-bold">Método FIFA PRO</span>,
