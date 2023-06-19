@@ -40,7 +40,7 @@ export default function Privacy() {
           </div>
           <div>
             <h1 className="md:text-3xl text-xl font-bold">
-              Política de Cookies Doctor Green Consultoria
+              Política de Cookies Método FIFA PRO
             </h1>
 
             <div className="py-4">
@@ -69,90 +69,103 @@ export default function Privacy() {
                 fornecer um serviço que você usa.
               </p>
             </div>
+
+            <div className="py-4">
+              <h2 className="text-xl font-bold">Desativar cookies</h2>
+              <p className="text-sm md:text-base">
+                Você pode impedir a configuração de cookies ajustando as
+                configurações do seu navegador (consulte a Ajuda do navegador
+                para saber como fazer isso). Esteja ciente de que a desativação
+                de cookies afetará a funcionalidade deste e de muitos outros
+                sites que você visita. A desativação de cookies geralmente
+                resultará na desativação de determinadas funcionalidades e
+                recursos deste site. Portanto, é recomendável que você não
+                desative os cookies.
+              </p>
+            </div>
           </div>
           <div>
             <h1 className="md:text-3xl text-xl font-bold">
-              3. Isenção de responsabilidade
+              Cookies que definimos
             </h1>
-            <ol className="text-sm md:text-base">
+            <ul className="text-sm md:text-base list-disc space-y-2 p-4">
               <li>
-                Os materiais no site da Método FIFA PRO são fornecidos ‘como
-                estão’. Método FIFA PRO não oferece garantias, expressas ou
-                implícitas, e, por este meio, isenta e nega todas as outras
-                garantias, incluindo, sem limitação, garantias implícitas ou
-                condições de comercialização, adequação a um fim específico ou
-                não violação de propriedade intelectual ou outra violação de
-                direitos.
+                <strong>Cookies relacionados à conta:</strong> <br />
+                Se você criar uma conta connosco, usaremos cookies para o
+                gerenciamento do processo de inscrição e administração geral.
+                Esses cookies geralmente serão excluídos quando você sair do
+                sistema, porém, em alguns casos, eles poderão permanecer
+                posteriormente para lembrar as preferências do seu site ao sair.
               </li>
 
               <li>
-                Além disso, o Método FIFA PRO não garante ou faz qualquer
-                representação relativa à precisão, aos resultados prováveis ​​ou
-                à confiabilidade do uso dos materiais em seu site ou de outra
-                forma relacionado a esses materiais ou em sites vinculados a
-                este site.
+                <strong>Cookies relacionados ao login:</strong>
+                <br /> Utilizamos cookies quando você está logado, para que
+                possamos lembrar dessa ação. Isso evita que você precise fazer
+                login sempre que visitar uma nova página. Esses cookies são
+                normalmente removidos ou limpos quando você efetua logout para
+                garantir que você possa acessar apenas a recursos e áreas
+                restritas ao efetuar login.
               </li>
-            </ol>
-          </div>
-          <div>
-            <h1 className="md:text-3xl text-xl font-bold">4. Limitações</h1>
-            <p className="text-sm md:text-base">
-              Em nenhum caso o Método FIFA PRO ou seus fornecedores serão
-              responsáveis ​​por quaisquer danos (incluindo, sem limitação,
-              danos por perda de dados ou lucro ou devido a interrupção dos
-              negócios) decorrentes do uso ou da incapacidade de usar os
-              materiais em Método FIFA PRO, mesmo que Método FIFA PRO ou um
-              representante autorizado da Método FIFA PRO tenha sido notificado
-              oralmente ou por escrito da possibilidade de tais danos. Como
-              algumas jurisdições não permitem limitações em garantias
-              implícitas, ou limitações de responsabilidade por danos
-              conseqüentes ou incidentais, essas limitações podem não se aplicar
-              a você.
-            </p>
+              <li>
+                <strong>Cookies relacionados a boletins por e-mail: </strong>
+                <br /> Este site oferece serviços de assinatura de boletim
+                informativo ou e-mail e os cookies podem ser usados ​​para
+                lembrar se você já está registrado e se deve mostrar
+                determinadas notificações válidas apenas para usuários inscritos
+                / não inscritos.
+              </li>
+
+              <li>
+                <strong>Cookies relacionados a formulários:</strong> <br />{' '}
+                Quando você envia dados por meio de um formulário como os
+                encontrados nas páginas de contacto ou nos formulários de
+                comentários, os cookies podem ser configurados para lembrar os
+                detalhes do usuário para correspondência futura.
+              </li>
+            </ul>
           </div>
           <div>
             <h1 className="md:text-3xl text-xl font-bold">
-              5. Precisão dos materiais
+              Compromisso do Usuário
             </h1>
             <p className="text-sm md:text-base">
-              Os materiais exibidos no site da Método FIFA PRO podem incluir
-              erros técnicos, tipográficos ou fotográficos. Método FIFA PRO não
-              garante que qualquer material em seu site seja preciso, completo
-              ou atual. Método FIFA PRO pode fazer alterações nos materiais
-              contidos em seu site a qualquer momento, sem aviso prévio. No
-              entanto, Método FIFA PRO não se compromete a atualizar os
-              materiais.
+              O usuário se compromete a fazer uso adequado dos conteúdos e da
+              informação que o Método FIFA PRO oferece no site e com caráter
+              enunciativo, mas não limitativo:
             </p>
+
+            <ul className="text-sm md:text-base list-disc space-y-2 p-4">
+              <li>
+                Não se envolver em atividades que sejam ilegais ou contrárias à
+                boa fé a à ordem pública;
+              </li>
+
+              <li>
+                Não difundir propaganda ou conteúdo de natureza racista,
+                xenofóbica, casas de apostas ou azar, qualquer tipo de
+                pornografia ilegal, de apologia ao terrorismo ou contra os
+                direitos humanos;
+              </li>
+              <li>
+                Não causar danos aos sistemas físicos (hardwares) e lógicos
+                (softwares) do Método FIFA PRO, de seus fornecedores ou
+                terceiros, para introduzir ou disseminar vírus informáticos ou
+                quaisquer outros sistemas de hardware ou software que sejam
+                capazes de causar danos anteriormente mencionados.
+              </li>
+            </ul>
           </div>
+
           <div>
-            <h1 className="md:text-3xl text-xl font-bold">6. Links</h1>
+            <h1 className="md:text-3xl text-xl font-bold">Mais informações</h1>
             <p className="text-sm md:text-base">
-              O Método FIFA PRO não analisou todos os sites vinculados ao seu
-              site e não é responsável pelo conteúdo de nenhum site vinculado. A
-              inclusão de qualquer link não implica endosso por Método FIFA PRO
-              do site. O uso de qualquer site vinculado é por conta e risco do
-              usuário.
+              Esperemos que esteja esclarecido e, como mencionado anteriormente,
+              se houver algo que você não tem certeza se precisa ou não,
+              geralmente é mais seguro deixar os cookies ativados, caso interaja
+              com um dos recursos que você usa em nosso site. Esta política é
+              efetiva a partir de <strong>20 junho 2023 20:34</strong>
             </p>
-
-            <div className="py-4">
-              <h2 className="text-xl font-bold">Modificações</h2>
-              <p className="text-sm md:text-base">
-                O Método FIFA PRO a pode revisar estes termos de serviço do site
-                a qualquer momento, sem aviso prévio. Ao usar este site, você
-                concorda em ficar vinculado à versão atual desses termos de
-                serviço.
-              </p>
-            </div>
-
-            <div className="py-4">
-              <h2 className="text-xl font-bold">Lei aplicável</h2>
-              <p className="text-sm md:text-base">
-                Estes termos e condições são regidos e interpretados de acordo
-                com as leis do Método FIFA PRO e você se submete
-                irrevogavelmente à jurisdição exclusiva dos tribunais naquele
-                estado ou localidade.
-              </p>
-            </div>
           </div>
         </div>
       </div>
