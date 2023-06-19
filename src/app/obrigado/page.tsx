@@ -3,7 +3,7 @@ import { Logo } from '@/components/Logo'
 export default function SuccessfulPayment() {
   return (
     <main className="md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
-      <div>
+      <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 pt-4 text-gray-50 md:px-24 px-2 py-10">
         <Logo />
 
         <div>
