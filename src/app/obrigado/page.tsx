@@ -2,7 +2,7 @@ import { Logo } from '@/components/Logo'
 
 export default function SuccessfulPayment() {
   return (
-    <main>
+    <main className="md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
       <div>
         <Logo />
 
