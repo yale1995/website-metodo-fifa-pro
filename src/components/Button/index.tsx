@@ -16,7 +16,12 @@ export function Button() {
   }
 
   return (
-    <button className="p-2 md:p-4 bg-green-600 rounded-2xl font-bold text-gray-300 text-2xl block mx-auto mt-16 animate-bounce">
+    <button
+      className="p-2 md:p-4 bg-green-600 rounded-2xl font-bold text-gray-300 text-2xl block mx-auto mt-16 animate-bounce"
+      onClick={() =>
+        window.open('https://ev.braip.com/checkout/pla6g1zl/che6od0g')
+      }
+    >
       QUERO ALCANÇAR LUCROS MENSAIS CONSISTENTES!
     </button>
   )
