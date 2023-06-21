@@ -12,7 +12,7 @@ export default async function Home() {
     {
       name: 'Ayrton Rafael',
       description:
-        'Aluno de Goiânia/GO aplicando o Método FIFA PRO já obteve mais R$9.000 de rsultado.',
+        'Aluno de Goiânia/GO aplicando o Método FIFA PRO já obteve mais R$9.000 de resultado.',
       path: '/videos/video-1.mp4',
     },
 
@@ -28,7 +28,7 @@ export default async function Home() {
       <div className="md:bg-[url('../assets/background-image.jpg')] bg-cover backdrop-blur-sm">
         <div className="flex flex-col gap-3 min-h-screen bg-indigo-950 md:bg-indigo-950/75 backdrop-brightness-75 pt-4">
           <Logo />
-          <div className="max-w-screen-lg flex-1 w-full mx-auto rounded-lg overflow-hidden">
+          <div className="max-w-screen-lg flex flex-col flex-1 w-full mx-auto rounded-lg overflow-hidden py-8">
             <h1 className="text-gray-300 max-w-xl mx-auto text-center text-2xl font-bold py-4 px-2">
               ASSISTA AO VÍDEO ABAIXO E DESCUBRA COMO{' '}
               <span className="text-yellow-400">
@@ -36,10 +36,10 @@ export default async function Home() {
               </span>
             </h1>
             <iframe
-              allowFullScreen
-              src="https://www.youtube.com/embed/XgferMHVaEA?autoplay=1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              className="w-full md:h-[450px] h-96"
+              src="https://scripts.converteai.net/3c0401af-2147-438a-b17c-922a08f21cf2/players/649221f0f6efcf00093c9d86/embed.html"
+              id="ifr_649221f0f6efcf00093c9d86"
+              className="w-full md:flex-1 h-60"
+              referrerPolicy="origin"
             />
             <div className="px-2">
               <Button />
