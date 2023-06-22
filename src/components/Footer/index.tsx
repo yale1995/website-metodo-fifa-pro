@@ -32,6 +32,9 @@ export function Footer() {
           respondemos todas as mensagens por ordem de chegada
         </p>
       </div>
+      <span className="block text-center text-white font-normal pt-4 md:p-0">
+        Contato: suportefifapro@gmail.com
+      </span>
     </footer>
   )
 }
