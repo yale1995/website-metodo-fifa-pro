@@ -8,7 +8,7 @@ export function Footer() {
   useEffect(() => {
     setTimeout(() => {
       setShowComponent(true)
-    }, 20000)
+    }, 1000 * 60 * 15 + 30)
   }, [])
 
   if (!showComponent) {

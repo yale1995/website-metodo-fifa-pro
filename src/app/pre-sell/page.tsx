@@ -62,7 +62,7 @@ export default function PreSellPage() {
   if (step === 6) {
     setTimeout(() => {
       router.push('/')
-    }, 2000)
+    }, 1000)
   }
 
   const allProgress = {
